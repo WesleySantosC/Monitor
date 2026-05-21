@@ -1,0 +1,51 @@
+# Metrics Monitor
+
+Simple HTTP monitoring script with Slack alerts.
+
+## Requirements
+
+- Python 3
+- venv
+
+## Create virtual environment
+
+```bash
+python3 -m venv venv
+```
+
+---
+
+## Activate virtual environment
+
+Linux/macOS:
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+## Install dependencies
+
+```bash
+pip install requests python-dotenv
+```
+
+---
+
+## Configure `.env`
+
+Create a `.env` file:
+
+```env
+URL=https://example.com
+SLACK_WEBHOOK=https://hooks.slack.com/services/XXXX/XXXX/XXXX
+```
+
+---
+
+## Run project
+
+```bash
+python main.py
+```
